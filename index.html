@@ -824,30 +824,336 @@
                 font-size: 2rem;
             }
 
+            /* Navigation */
+            .nav-content {
+                padding: 0 20px;
+            }
+
+            .nav-logo {
+                height: 40px;
+            }
+
             .nav-links {
-                display: none;
+                gap: 10px;
+            }
+
+            .nav-links a {
+                padding: 10px 18px;
+                font-size: 0.95rem;
+            }
+
+            /* Hero */
+            .hero {
+                min-height: auto;
+                padding: 60px 0;
+            }
+
+            .hero-image-wrapper {
+                max-width: 300px;
+                margin-bottom: 30px;
+            }
+
+            .floating-mapu {
+                width: 60px;
+                height: 60px;
+            }
+
+            .floating-mapu:nth-child(2) {
+                width: 70px;
+                height: 70px;
+                top: -20px;
+                right: -10px;
+            }
+
+            .floating-mapu:nth-child(4) {
+                width: 50px;
+                height: 50px;
+                left: -30px;
             }
 
             .hero-title {
-                font-size: 4rem;
+                max-width: 400px;
+                margin-bottom: 40px;
             }
 
-            .hero-subtitle {
-                font-size: 1.5rem;
+            .btn {
+                padding: 15px 30px;
+                font-size: 1.1rem;
             }
 
+            .hero-buttons {
+                gap: 15px;
+            }
+
+            /* Stats */
+            .stats-bar {
+                padding: 40px 0;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            /* Scrolling Banner */
+            .scrolling-banner {
+                height: 250px;
+            }
+
+            .banner-image {
+                height: 250px;
+            }
+
+            /* Sections */
             .section-title {
-                font-size: 3rem;
+                font-size: 2.5rem;
+            }
+
+            .section-subtitle {
+                font-size: 1.2rem;
+            }
+
+            /* Benefits */
+            .benefits-section {
+                padding: 80px 0;
+            }
+
+            .benefits-pretitle {
+                font-size: 1.1rem;
+            }
+
+            .benefits-title {
+                font-size: 2.5rem;
+            }
+
+            .benefits-content {
+                flex-direction: column;
+                gap: 50px;
+            }
+
+            .benefits-image {
+                flex: 0 0 auto;
+                max-width: 350px;
+                order: 1;
+            }
+
+            .benefits-pills {
+                order: 2;
+                max-width: 100%;
+            }
+
+            .benefit-pill {
+                font-size: 0.95rem;
+                padding: 14px 24px;
+            }
+
+            /* Tokenomics */
+            .tokenomics-section {
+                padding: 80px 0;
             }
 
             .tokenomics-content {
                 grid-template-columns: 1fr;
+                gap: 50px;
             }
 
-            .features-grid,
-            .gallery-grid,
+            .token-circle {
+                max-width: 300px;
+            }
+
+            .token-info-item .value {
+                font-size: 2rem;
+            }
+
+            /* Contract */
+            .contract-section {
+                padding: 80px 0;
+            }
+
+            .contract-wrapper {
+                padding: 30px 20px;
+            }
+
+            .contract-label {
+                font-size: 1.2rem;
+            }
+
+            .contract-address {
+                font-size: 1rem;
+                padding: 20px;
+            }
+
+            /* Community */
+            .community-section {
+                padding: 80px 0;
+            }
+
             .social-cards {
                 grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+        }
+
+        /* Mobile Phones */
+        @media (max-width: 600px) {
+            .nav-logo {
+                height: 35px;
+            }
+
+            .nav-links a {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero-image-wrapper {
+                max-width: 250px;
+            }
+
+            .hero-title {
+                max-width: 300px;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .stats-grid {
+                gap: 25px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .stat-label {
+                font-size: 1rem;
+            }
+
+            .scrolling-banner {
+                height: 200px;
+            }
+
+            .banner-image {
+                height: 200px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .benefits-section {
+                padding: 60px 0;
+            }
+
+            .benefits-pretitle {
+                font-size: 1rem;
+            }
+
+            .benefits-title {
+                font-size: 2rem;
+            }
+
+            .benefits-header {
+                margin-bottom: 50px;
+            }
+
+            .benefits-content {
+                gap: 40px;
+            }
+
+            .benefits-image {
+                max-width: 280px;
+            }
+
+            .benefit-pill {
+                font-size: 0.85rem;
+                padding: 12px 20px;
+            }
+
+            .tokenomics-section {
+                padding: 60px 0;
+            }
+
+            .token-circle {
+                max-width: 250px;
+            }
+
+            .token-info-item {
+                padding: 25px;
+            }
+
+            .token-info-item h4 {
+                font-size: 1.2rem;
+            }
+
+            .token-info-item .value {
+                font-size: 1.8rem;
+            }
+
+            .contract-section {
+                padding: 60px 0;
+            }
+
+            .contract-wrapper {
+                padding: 25px 15px;
+            }
+
+            .contract-label {
+                font-size: 1rem;
+            }
+
+            .contract-address {
+                font-size: 0.85rem;
+                padding: 15px;
+            }
+
+            .community-section {
+                padding: 60px 0;
+            }
+
+            .social-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .social-card h3 {
+                font-size: 1.6rem;
+            }
+
+            .social-card p {
+                font-size: 1rem;
+            }
+
+            .footer-logo {
+                height: 50px;
+            }
+
+            .footer-text {
+                font-size: 0.95rem;
             }
         }
     </style>
